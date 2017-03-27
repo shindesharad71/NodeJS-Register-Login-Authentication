@@ -27,6 +27,7 @@ html(lang='en')
               a(href='/users/logout') Logout
         // /.navbar-collapse
     .container
+    != messages()
     block content
 
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js")
