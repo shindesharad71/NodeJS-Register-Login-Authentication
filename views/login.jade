@@ -3,12 +3,12 @@ extends layout
 block content
     h2.page-header Login
     p Please login using this form below.
-    form(method="post", action="/users/login")
+    form(class="col-md-offset-3 col-md-6", method="post", action="/users/login")
         .form-group
-        lablel Username
+        label Username
         input.form-control(name="username", type="text", placeholder="Enter Username")
         .form-group
-        lablel Password
+        label Password
         input.form-control(name="password", type="password", placeholder="Enter Password")
         .form-group
         input.btn.btn-primary(type="submit", name="submit", value="Login")
